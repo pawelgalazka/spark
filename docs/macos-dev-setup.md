@@ -18,21 +18,33 @@ xcode-select —install
 
    > https://brew.sh
 
-6. Setup Hyper terminal
+6. Install nvm
+
+   > https://github.com/nvm-sh/nvm
+
+7. Pick LTS node version
+
+```
+nvm install --lts
+nvm use --lts
+```
+
+8. Setup Hyper terminal
 
    > https://hyper.is/
 
-7. Setup terminal add-ons
+9. Setup terminal add-ons
 
-   > https://github.com/sindresorhus/pure > https://github.com/sindresorhus/hyper-snazzy
+   > https://github.com/sindresorhus/pure
+   > https://github.com/sindresorhus/hyper-snazzy
 
-8. Install git through brew
+10. Install git through brew
 
 ```
 brew install git
 ```
 
-9. Configure git
+11. Configure git
 
 ```
 git config --global user.name "Pawel Galazka"
@@ -41,40 +53,17 @@ git config --global pull.rebase true
 git config --global -l
 ```
 
-10. Install nvm
+12. Setup VSCode
 
-    > https://github.com/nvm-sh/nvm
-
-11. Pick LTS node version
-
-```
-nvm install --lts
-nvm use --lts
-```
-
-12. Setup `codestation` files
-
-```
-mkdir ~/Projects && cd ~/Projects
-git clone https://github.com/pawelgalazka/codestation.git
-echo "source ~/Projects/codestation/zsh.sh" >> ~/.zshrc
-```
-
-13. Setup VSCode
-    > https://code.visualstudio.com
+> https://code.visualstudio.com
 
 > To setup `code` command. Press Cmd + Shift + P and then search for "shell command".
 > Pick option: "Shell Command: install code command in path"
 
-14. Link VSCode settings
-
-```
-ln -sf ~/Projects/codestation/vscode/settings.json ~/Library/Application\ Support/Code/User/settings.json
-```
-
-15. Install VSCode extensions
+13. Install essential VSCode extensions
 
 ```
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension esbenp.prettier-vscode
+code --install-extension stylelint.vscode-stylelint
 ```
