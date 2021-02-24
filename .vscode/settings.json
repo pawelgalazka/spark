@@ -1,0 +1,23 @@
+{
+  // Enable automatic formatting (prettier & eslint)
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+
+  // Stylint: prevent double error reporting from vscode
+  "css.validate": false,
+  "scss.validate": false,
+
+  // Prevent error reporting on flow type syntax
+  "javascript.validate.enable": false,
+
+  // Other
+  "editor.tabSize": 2,
+  "settingsSync.ignoredExtensions": [],
+  "workbench.sideBar.location": "right",
+  "workbench.editor.enablePreview": false,
+  "explorer.autoReveal": false,
+  "files.autoSave": "onFocusChange"
+}
